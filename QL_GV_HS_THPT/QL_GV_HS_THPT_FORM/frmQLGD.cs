@@ -27,24 +27,7 @@ namespace QL_GV_HS_THPT_FORM
         private string dk = "";
         private void frmQLGD_Load(object sender, EventArgs e)
         {
-            var source = new AutoCompleteStringCollection();
-
-            DataTable tb = DAL_GV.getThongTinGV();
-            cboGiaoVien.DataSource = tb;
-            cboGiaoVien.DisplayMember = "HoTen";
-            cboGiaoVien.ValueMember = "MaGV";
-            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString());
-            cboGiaoVien.AutoCompleteCustomSource = source;
-
-            tb = DAL_Lop.getAllLop();
-            cboLop.DataSource = tb;
-            cboLop.DisplayMember = "TenLop";
-            cboLop.ValueMember = "MaLop";
-            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["TenLop"].ToString());
-            cboLop.AutoCompleteCustomSource = source;
-
-            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD();
-
+            
         }
 
         private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -75,41 +58,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if (cboGiaoVien.Text != "" && cboGiaoVien.SelectedValue != null) EC_Giang.MaGV = cboGiaoVien.SelectedValue.ToString();
-            else
-            {
-                MessageBox.Show("Giáo viên không xác định");
-                cboGiaoVien.Focus();
-                return;
-            }
-            if (cboLop.Text != "" && cboLop.SelectedValue != null) EC_Giang.MaLop = cboLop.SelectedValue.ToString();
-            else
-            {
-                MessageBox.Show("Lớp không xác định");
-                cboLop.Focus();
-                return;
-            }
-            EC_Giang.Thu = cmbThu.Text;
-            EC_Giang.Tietday = txtTiet.Text;
-
-            if (_them)
-            {
-                //them tt
-                DAL_Giang.addGiangday(EC_Giang);
-
-                KhoaBtn();
-                Reset();
-            }
-            else
-            {
-                //sua tt
-                DAL_Giang.updateGiangday(EC_Giang);
-                KhoaBtn();
-                Reset();
-            }
-            btnThem.Enabled = true;
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
+            
         }
 
         private void btnSua_Click(object sender, EventArgs e)

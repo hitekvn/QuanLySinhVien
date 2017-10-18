@@ -60,7 +60,26 @@ namespace QL_GV_HS_THPT_FORM
                 }
             }
         }
+        public void adas()
+        {
+            var source = new AutoCompleteStringCollection();
 
+            DataTable tb = DAL_GV.getThongTinGV();
+            cboGiaoVien.DataSource = tb;
+            cboGiaoVien.DisplayMember = "HoTen";
+            cboGiaoVien.ValueMember = "MaGV";
+            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString());
+            cboGiaoVien.AutoCompleteCustomSource = source;
+
+            tb = DAL_Lop.getAllLop();
+            cboLop.DataSource = tb;
+            cboLop.DisplayMember = "TenLop";
+            cboLop.ValueMember = "MaLop";
+            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["TenLop"].ToString());
+            cboLop.AutoCompleteCustomSource = source;
+
+            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD();
+        }
         private void dgvAcc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dong = e.RowIndex;

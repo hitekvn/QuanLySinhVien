@@ -336,4 +336,4 @@
         private System.Windows.Forms.ComboBox cbTenMon;
         private System.Windows.Forms.Label lbMessage;
     }
-}
+} 

@@ -50,18 +50,3 @@ D:\HOC TAP\ky1_nam4\ki1_nam4\thuc_tap_nhom\de_tai\TTN_QL_GV_HS_THPT\Soucre\QL_GV
 C:\Users\Rob Luccy\Downloads\Compressed\TTN_QL_GV_HS_THPT-master\TTN_QL_GV_HS_THPT-master\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
 C:\Users\Rob Luccy\Downloads\Compressed\TTN_QL_GV_HS_THPT-master\TTN_QL_GV_HS_THPT-master\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
 C:\Users\Rob Luccy\Downloads\Compressed\TTN_QL_GV_HS_THPT-master\TTN_QL_GV_HS_THPT-master\Soucre\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb
-C:\Users\Rob Luccy\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
-C:\Users\Rob Luccy\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
-C:\Users\Rob Luccy\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb
-C:\Users\FPTShop\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
-C:\Users\FPTShop\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
-C:\Users\FPTShop\Documents\GitHub\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb
-D:\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
-D:\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
-D:\QuanLySinhVien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb
-E:\forgithub\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
-E:\forgithub\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
-E:\forgithub\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb
-D:\GITHUB\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\bin\Debug\QL_GV_HS_THPT.exe.config
-D:\GITHUB\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.exe
-D:\GITHUB\Quanlysinhvien\QL_GV_HS_THPT\QL_GV_HS_THPT\obj\Debug\QL_GV_HS_THPT.pdb

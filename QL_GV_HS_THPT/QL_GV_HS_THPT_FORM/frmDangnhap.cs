@@ -22,7 +22,7 @@ namespace QL_GV_HS_THPT_FORM
         }
         private void frmDangnhap_Load(object sender, EventArgs e)
         {
-            if (ConfigurationManager.AppSettings.Get("Save") == "true")
+            if(ConfigurationManager.AppSettings.Get("Save") == "true")
             {
                 ckcSave.Checked = true;
                 txtUsername.Text = ConfigurationManager.AppSettings.Get("Username");
@@ -32,18 +32,18 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == null)
+            if(txtUsername.Text == null)
             {
                 MessageBox.Show("Chưa nhập tên đăng nhập !");
             }
-            if (txtPassword.Text == null)
+            if(txtPassword.Text == null)
             {
                 MessageBox.Show("Chưa nhập mật khẩu !");
             }
-            if (busUser.checkLogin(txtUsername.Text, txtPassword.Text) != null)
+            if(busUser.checkLogin(txtUsername.Text, txtPassword.Text) != null)
             {
                 EC_tblUser ecUser = busUser.getUser(txtUsername.Text, txtPassword.Text);
-
+                
                 if (ckcSave.Checked == true)
                 {
 
@@ -60,7 +60,7 @@ namespace QL_GV_HS_THPT_FORM
                 {
                     Configuration _config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                     _config.AppSettings.Settings["Save"].Value = "false";
-
+               
                     _config.Save(ConfigurationSaveMode.Modified);
                     ConfigurationManager.RefreshSection("appSettings");
                 }
@@ -82,7 +82,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void ckcHienpw_CheckedChanged(object sender, EventArgs e)
         {
-            if (ckcHienpw.Checked == true)
+            if(ckcHienpw.Checked == true)
             {
                 txtPassword.UseSystemPasswordChar = false;
             }
@@ -104,7 +104,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void ckcSave_CheckedChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void frmDangnhap_FormClosing(object sender, FormClosingEventArgs e)

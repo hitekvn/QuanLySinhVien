@@ -69,7 +69,7 @@ namespace QL_GV_HS_THPT_FORM
                 txtDiaChi.Text = dgvGiaoVien.Rows[dong].Cells[6].Value.ToString();
                 txtLuong.Text = dgvGiaoVien.Rows[dong].Cells[7].Value.ToString();
                 txtMaMon.Text = dgvGiaoVien.Rows[dong].Cells[8].Value.ToString();
-                cbTenMon.DataSource = MH.getMonhoc("where MaMon = '" + txtMaMon.Text + "'");
+                cbTenMon.DataSource = MH.getMonhoc("where MaMon = '"+txtMaMon.Text+"'");
                 cbTenMon.DisplayMember = "TenMon";
             }
             catch { }
@@ -97,7 +97,7 @@ namespace QL_GV_HS_THPT_FORM
                 return;
             }
             MoDieuKhien();
-            cbGT.DataSource = gv.getField("GT");
+            cbGT.DataSource= gv.getField("GT");
             cbGT.DisplayMember = "GT";
             btnAdd.Enabled = false;
             btnDel.Enabled = false;

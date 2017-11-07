@@ -23,7 +23,7 @@ namespace QL_GV_HS_THPT_FORM
         private bool _dangTimTen = false;
         private bool _dangTimMaMon = false;
         private bool _dangTimDiaChi = false;
-
+      
         private BUS_tblGiaovien busGV = new BUS_tblGiaovien();
         public frmTimGV()
         {
@@ -158,7 +158,7 @@ namespace QL_GV_HS_THPT_FORM
             else dieukien = "where MaMon like N'%" + cboTimMaMon.Text + "%'";
             if (_dangTimMaGV) dieukien += "AND MaGV like N'%" + txtTimMaGV.Text + "%'";
             if (_dangTimHo) dieukien += "AND Ho like N'%" + txtTimHoGV.Text + "%'";
-            if (_dangTimTen) dieukien += "AND Ten like N'%" + txtTimTenGV.Text + "%'";
+            if (_dangTimTen) dieukien += "AND Ten like N'%" + txtTimTenGV.Text + "%'";           
             if (_dangTimDiaChi)
             {
                 if (cboTimDiaChi.SelectedIndex != 0) dieukien += "AND DiaChi like N'%" + cboTimDiaChi.Text + "%'";

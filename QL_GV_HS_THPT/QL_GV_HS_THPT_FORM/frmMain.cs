@@ -42,7 +42,7 @@ namespace QL_GV_HS_THPT_FORM
             frmTKB frm = new frmTKB();
             frm.Show();
             this.Dispose();
-
+            
         }
 
         private void btnHocsinh_Click(object sender, EventArgs e)
@@ -64,17 +64,17 @@ namespace QL_GV_HS_THPT_FORM
             frmDangnhap frm = new frmDangnhap();
             frm.Show();
             this.Dispose();
-
+            
         }
-
+        
         private void checkRule(int rule)
         {
-            foreach (Control ctr in panel1.Controls)
-            {
-                ctr.Enabled = false;
-            }
+            foreach(Control ctr in panel1.Controls)
+                {
+                    ctr.Enabled = false;
+                }
             menuStrip1.Enabled = true;
-            if (rule >= 0)
+            if(rule>=0)
             {
                 btnLogout.Enabled = true;
                 btnHocsinh.Enabled = true;
@@ -89,7 +89,7 @@ namespace QL_GV_HS_THPT_FORM
                 btnAddstudent.Enabled = false;
                 btnAcc.Enabled = false;
             }
-            if (rule >= 1)
+            if(rule>=1)
             {
                 btnGiaovien.Enabled = true;
                 btnListteacher.Enabled = true;
@@ -98,11 +98,11 @@ namespace QL_GV_HS_THPT_FORM
                 btnTeacher.Enabled = true;
                 btnAcc.Enabled = true;
             }
-            if (rule >= 2)
+            if(rule>=2)
             {
                 btnTkb.Enabled = true;
                 btnRegisterteach.Enabled = true;
-
+                
             }
             if (rule >= 4)
             {
@@ -169,7 +169,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void frmMain_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.H)
+            if(e.KeyCode == Keys.H)
             {
                 frmHuongdan frm = new frmHuongdan();
                 frm.Show();

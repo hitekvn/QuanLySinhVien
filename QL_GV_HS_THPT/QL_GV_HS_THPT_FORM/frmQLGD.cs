@@ -33,7 +33,7 @@ namespace QL_GV_HS_THPT_FORM
             cboGiaoVien.DataSource = tb;
             cboGiaoVien.DisplayMember = "HoTen";
             cboGiaoVien.ValueMember = "MaGV";
-            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString());
+            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString()); 
             cboGiaoVien.AutoCompleteCustomSource = source;
 
             tb = DAL_Lop.getAllLop();
@@ -44,7 +44,7 @@ namespace QL_GV_HS_THPT_FORM
             cboLop.AutoCompleteCustomSource = source;
 
             dgvDanhSach.DataSource = DAL_Giang.getThongTinGD();
-
+            
         }
 
         private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -69,7 +69,7 @@ namespace QL_GV_HS_THPT_FORM
             btnXoa.Enabled = false;
 
             ResetData();
-
+            
             _them = true;
         }
 
@@ -203,7 +203,7 @@ namespace QL_GV_HS_THPT_FORM
             frmMain frm = new frmMain();
             frm.Show();
             this.Dispose();
-
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

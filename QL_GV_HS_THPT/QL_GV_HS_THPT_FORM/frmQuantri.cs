@@ -24,9 +24,9 @@ namespace QL_GV_HS_THPT_FORM
         private void frmQuantri_Load(object sender, EventArgs e)
         {
             dgvAcc.DataSource = busUser.getUserinfo("");
-            for (int i = 0; i < dgvAcc.RowCount; i++)
+            for(int i = 0; i<dgvAcc.RowCount ; i++)
             {
-                if (dgvAcc.Rows[i].Cells["TenQuyen"].Value.ToString() == "Administrator") dgvAcc.Rows[i].DefaultCellStyle.ForeColor = Color.Red;
+                if (dgvAcc.Rows[i].Cells["TenQuyen"].Value.ToString() == "Administrator") dgvAcc.Rows[i].DefaultCellStyle.ForeColor= Color.Red;
             }
         }
 
@@ -39,7 +39,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (dong < 0)
+            if(dong < 0)
             {
                 MessageBox.Show("Chưa chọn tài khoản để xóa .");
                 return;
@@ -60,26 +60,7 @@ namespace QL_GV_HS_THPT_FORM
                 }
             }
         }
-        public void adas()
-        {
-            var source = new AutoCompleteStringCollection();
 
-            DataTable tb = DAL_GV.getThongTinGV();
-            cboGiaoVien.DataSource = tb;
-            cboGiaoVien.DisplayMember = "HoTen";
-            cboGiaoVien.ValueMember = "MaGV";
-            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["HoTen"].ToString());
-            cboGiaoVien.AutoCompleteCustomSource = source;
-
-            tb = DAL_Lop.getAllLop();
-            cboLop.DataSource = tb;
-            cboLop.DisplayMember = "TenLop";
-            cboLop.ValueMember = "MaLop";
-            for (int _i = 0; _i < tb.Rows.Count; _i++) source.Add(tb.Rows[_i]["TenLop"].ToString());
-            cboLop.AutoCompleteCustomSource = source;
-
-            dgvDanhSach.DataSource = DAL_Giang.getThongTinGD();
-        }
         private void dgvAcc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dong = e.RowIndex;
@@ -109,7 +90,7 @@ namespace QL_GV_HS_THPT_FORM
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (dong < 0)
+            if(dong<0)
             {
                 MessageBox.Show("Chưa chọn tài khoản!");
                 return;

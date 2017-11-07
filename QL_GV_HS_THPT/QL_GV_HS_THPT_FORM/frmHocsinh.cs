@@ -85,8 +85,8 @@ namespace QL_GV_HS_THPT_FORM
         public frmHocsinh(string action)
         {
             InitializeComponent();
-            if (action == "TimKiem")
-                grbThongTinHocSinh.Enabled = false;
+            if (action=="TimKiem")
+            grbThongTinHocSinh.Enabled = false;
             btnLamMoiDuLieu.Enabled = false;
             btnLuu.Enabled = false;
             btnSua.Enabled = false;
@@ -190,7 +190,7 @@ namespace QL_GV_HS_THPT_FORM
             DataTable tb = busHs.getField("TonGiao");
             cboTimTonGiao.Items.Clear();
             cboTimTonGiao.Items.Add("Tất cả");
-            for (int i = 0; i < tb.Rows.Count; i++)
+            for(int i = 0; i < tb.Rows.Count; i++)
             {
                 cboTimTonGiao.Items.Add(tb.Rows[i]["TonGiao"].ToString());
             }
@@ -228,7 +228,7 @@ namespace QL_GV_HS_THPT_FORM
             DataTable tbl = busHS.getHocsinh(dieukien);
             dgvHocSinh.DataSource = tbl;
         }
-
+     
         private void txtTimHo_TextChanged(object sender, EventArgs e)
         {
             if (txtTimHoHS.Text != "") _dangTimHo = true;
